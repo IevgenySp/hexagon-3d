@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/IevgenySp/hexagon-3d.svg?branch=main)](https://app.travis-ci.com/IevgenySp/hexagon-3d)
+
 # hexagon-3d
 A small service for providing styles object for CSS-based 3d hexagons with high interactivity capabilities. You may use these shapes as skeletons for various animations, images adding, videos playing, combining them into different forms, and doing a lot of other things. The capabilities of hexagons will be growing over time.
 
