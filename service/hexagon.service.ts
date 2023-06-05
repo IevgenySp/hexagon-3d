@@ -13,14 +13,14 @@ export type IHexagonProps = {
 };
 
 export type IHexagonChildrensProps = {
-    topChildren?: HTMLElement,
-    bottomChildren?: HTMLElement,
-    side1Children?: HTMLElement,
-    side2Children?: HTMLElement,
-    side3Children?: HTMLElement,
-    side4Children?: HTMLElement,
-    side5Children?: HTMLElement,
-    side6Children?: HTMLElement,
+    topChildren?: HTMLElement | Element,
+    bottomChildren?: HTMLElement | Element,
+    side1Children?: HTMLElement | Element,
+    side2Children?: HTMLElement | Element,
+    side3Children?: HTMLElement | Element,
+    side4Children?: HTMLElement | Element,
+    side5Children?: HTMLElement | Element,
+    side6Children?: HTMLElement | Element,
 };
 
 const topBottomColorInit = 'linear-gradient( to top right,rgba(156,204,101 ,1) 0%, rgba(38,198,218 ,1) 50%)';
