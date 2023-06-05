@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for dist/hexagon.service.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">dist/</a> hexagon.service.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>18/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>21/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">78.26% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>18/23</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+var __assign = (this &amp;&amp; this.__assign) || function () {
+    __assign = Object.assign || <span class="fstat-no" title="function not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >function(t) {</span></span>
+<span class="cstat-no" title="statement not covered" >        for (var s, i = 1, n = arguments.length; i &lt; n; i++) {</span>
+<span class="cstat-no" title="statement not covered" >            s = arguments[i];</span>
+<span class="cstat-no" title="statement not covered" >            for (var p in s) <span class="cstat-no" title="statement not covered" >if (Object.prototype.hasOwnProperty.call(s, p))</span></span>
+<span class="cstat-no" title="statement not covered" >                t[p] = s[p];</span>
+        }
+<span class="cstat-no" title="statement not covered" >        return t;</span>
+    };
+    return __assign.apply(this, arguments);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var topBottomColorInit = 'linear-gradient( to top right,rgba(156,204,101 ,1) 0%, rgba(38,198,218 ,1) 50%)';
+var sidesColorInit = 'linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 40%)';
+var shadowColorInit = '1px 1px 30px rgb(2 119 189)';
+var sidesColorAlternativeInit = 'linear-gradient(to top, rgba(255,81,50,1) 0%,rgba(255,246,0,1) 100%)';
+var sidesShadowAlternativeInit = '0px 10px 40px 5px #c600ff';
+var hexagon3D = function (_a) {
+    var _b = _a.width, width = _b === void 0 ? 70 : <span class="branch-1 cbranch-no" title="branch not covered" >_b,</span> _c = _a.height, height = _c === void 0 ? 50 : _c, _d = _a.rotateZ, rotateZ = _d === void 0 ? 30 : <span class="branch-1 cbranch-no" title="branch not covered" >_d,</span> _e = _a.rotateX, rotateX = _e === void 0 ? 50 : <span class="branch-1 cbranch-no" title="branch not covered" >_e,</span> _f = _a.showShadow, showShadow = _f === void 0 ? false : <span class="branch-1 cbranch-no" title="branch not covered" >_f,</span> _g = _a.shadowColor, shadowColor = _g === void 0 ? shadowColorInit : <span class="branch-1 cbranch-no" title="branch not covered" >_g,</span> _h = _a.growTop, growTop = _h === void 0 ? false : _h, _j = _a.topBottomColor, topBottomColor = _j === void 0 ? topBottomColorInit : <span class="branch-1 cbranch-no" title="branch not covered" >_j,</span> _k = _a.sidesColor, sidesColor = _k === void 0 ? sidesColorInit : <span class="branch-1 cbranch-no" title="branch not covered" >_k,</span> _l = _a.opacity, opacity = _l === void 0 ? 0.8 : <span class="branch-1 cbranch-no" title="branch not covered" >_l,</span> _m = _a.showTransition, showTransition = _m === void 0 ? false : <span class="branch-1 cbranch-no" title="branch not covered" >_m;</span>
+    var height2D = width * 1.1547;
+    var sideLength = height2D / 2;
+    var smallHeight = Math.sqrt(Math.pow(height2D, 2) - Math.pow(sideLength, 2));
+    var hexagonStyleCommon = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        width: width + 'px',
+        height: height2D + 'px',
+        cursor: 'pointer',
+        clipPath: 'polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%)',
+        background: topBottomColor,
+        overflow: 'hidden',
+    };
+    var sideStyleCommon = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        width: sideLength + 'px',
+        height: height + 'px',
+        cursor: 'pointer',
+        opacity: opacity,
+        boxSizing: 'border-box',
+        background: sidesColor,
+        boxShadow: showShadow ? <span class="branch-0 cbranch-no" title="branch not covered" >shadowColor </span>: 'unset',
+        transition: showTransition ? <span class="branch-0 cbranch-no" title="branch not covered" >'height 0.5s ease-out' </span>: 'unset',
+        overflow: 'hidden',
+    };
+    return !growTop ? {
+        container: {
+            style: {
+                position: 'relative',
+                transformStyle: 'preserve-3d',
+                transform: "rotateX(".concat(rotateX, "deg) rotateZ(").concat(rotateZ, "deg)"),
+                width: 'fit-content',
+            },
+            top: {
+                id: 'top',
+                style: __assign(__assign({}, hexagonStyleCommon), { zIndex: 2 })
+            },
+            side1: {
+                id: 'side1',
+                style: __assign(__assign({}, sideStyleCommon), { left: smallHeight / 2 + 'px', transformOrigin: 'top left', transform: 'rotateZ(-30deg) rotateX(-90deg)' })
+            },
+            side2: {
+                id: 'side2',
+                style: __assign(__assign({}, sideStyleCommon), { left: (smallHeight / 2 - sideLength) + 'px', transformOrigin: 'top right', transform: 'rotateZ(30deg) rotateX(-90deg)' })
+            },
+            side3: {
+                id: 'side3',
+                style: __assign(__assign({}, sideStyleCommon), { left: -sideLength + 'px', top: (height2D - sideLength) / 2 + sideLength + 'px', transformOrigin: 'top right', transform: 'rotateZ(90deg) rotateX(-90deg)' })
+            },
+            side4: {
+                id: 'side4',
+                style: __assign(__assign({}, sideStyleCommon), { left: -sideLength + 'px', top: (height2D - sideLength) / 2 + 'px', transformOrigin: 'top right', transform: 'rotateZ(150deg) rotateX(-90deg)' })
+            },
+            side5: {
+                id: 'side5',
+                style: __assign(__assign({}, sideStyleCommon), { left: smallHeight + 'px', top: (height2D - sideLength) / 2 + 'px', transformOrigin: 'top left', transform: 'rotateZ(-150deg) rotateX(-90deg)' })
+            },
+            side6: {
+                id: 'side6',
+                style: __assign(__assign({}, sideStyleCommon), { left: smallHeight + 'px', top: (height2D - sideLength) / 2 + sideLength + 'px', transformOrigin: 'top left', transform: 'rotateZ(-90deg) rotateX(-90deg)' })
+            },
+            bottom: {
+                id: 'bottom',
+                style: __assign(__assign({}, hexagonStyleCommon), { marginTop: -height2D + 'px', zIndex: 1, transform: "translateZ(".concat(-height, "px)"), transition: 'transform 0.5s ease-out' })
+            }
+        }
+    } : {
+        container: {
+            style: {
+                position: 'relative',
+                transformStyle: 'preserve-3d',
+                transform: "rotateX(".concat(rotateX, "deg) rotateZ(").concat(rotateZ, "deg)"),
+                width: 'fit-content',
+            },
+            top: {
+                id: 'top',
+                style: __assign(__assign({}, hexagonStyleCommon), { 
+                    //marginBottom: height2D + 'px',
+                    zIndex: 2, transform: "translateZ(".concat(height, "px)"), transition: 'transform 0.5s ease-out' })
+            },
+            side1: {
+                id: 'side1',
+                style: __assign(__assign({}, sideStyleCommon), { left: smallHeight / 2 + 'px', top: (height2D - smallHeight) + 'px', transformOrigin: 'bottom left', transform: "translateY(".concat(-height + smallHeight, "px) rotateZ(-30deg) rotateX(270deg)") })
+            },
+            side2: {
+                id: 'side2',
+                style: __assign(__assign({}, sideStyleCommon), { top: (height2D - sideLength) / 2 + sideLength - smallHeight + 'px', transformOrigin: 'bottom left', transform: "translateY(".concat(-height + smallHeight, "px) rotateZ(30deg) rotateX(-90deg)") })
+            },
+            side3: {
+                id: 'side3',
+                style: __assign(__assign({}, sideStyleCommon), { left: -sideLength + 'px', top: (height2D - sideLength) / 2 + sideLength - smallHeight + 'px', transformOrigin: 'bottom right', transform: " translateY(".concat(-height + smallHeight, "px) rotateZ(90deg) rotateX(-90deg)") })
+            },
+            side4: {
+                id: 'side4',
+                style: __assign(__assign({}, sideStyleCommon), { left: -sideLength + 'px', top: (height2D - sideLength) / 2 - smallHeight + 'px', transformOrigin: 'bottom right', transform: "translateY(".concat(-height + smallHeight, "px) rotateZ(150deg) rotateX(-90deg)") })
+            },
+            side5: {
+                id: 'side5',
+                style: __assign(__assign({}, sideStyleCommon), { left: smallHeight + 'px', top: (height2D - sideLength) / 2 - smallHeight + 'px', transformOrigin: 'bottom left', transform: "translateY(".concat(-height + smallHeight, "px) rotateZ(-150deg) rotateX(-90deg)") })
+            },
+            side6: {
+                id: 'side6',
+                style: __assign(__assign({}, sideStyleCommon), { left: smallHeight + 'px', top: (height2D - sideLength) / 2 - smallHeight + sideLength + 'px', transformOrigin: 'bottom left', transform: "translateY(".concat(-height + smallHeight, "px) rotateZ(-90deg) rotateX(-90deg)") })
+            },
+            bottom: {
+                id: 'bottom',
+                style: __assign(__assign({}, hexagonStyleCommon), { marginTop: -height2D + 'px', zIndex: 1 })
+            }
+        }
+    };
+};
+exports.default = hexagon3D;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jun 05 2023 22:33:19 GMT+0200 (Central European Summer Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

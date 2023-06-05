@@ -1,11 +1,12 @@
 {
   "name": "hexagon-3d",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A service for building CSS hexagons with high interactivity capabilities",
   "main": "dist/hexagon.service.js",
   "types": "dist/hexagon.service.d.ts",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
   },
   "devDependencies": {
     "chai": "^4.3.7",
+    "coveralls": "^3.1.1",
+    "istanbul": "^0.4.5",
     "mocha": "^10.2.0"
   },
   "prepublish": "tsc"
