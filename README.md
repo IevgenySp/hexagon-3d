@@ -3,6 +3,12 @@
 # hexagon-3d
 A small service for providing styles object for CSS-based 3d hexagons with high interactivity capabilities. You may use these shapes as skeletons for various animations, images adding, videos playing, combining them into different forms, and doing a lot of other things. The capabilities of hexagons will be growing over time.
 
+If you are building your project with React you can use React component wrapper for the hexagon service which provides a graphical HTML part out of the box: [<b>hexagon-3d-react</b>](https://www.npmjs.com/package/hexagon-3d-react)
+
+### Live demo:
+
+[<b>Hexagon3D</b>](https://hexagon.metriker.com/)
+
 ![alt Samples](./assets/img/HexagonSamples.png)
 
 ## Installation
