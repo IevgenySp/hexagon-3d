@@ -12,14 +12,14 @@ export type IHexagonProps = {
     showTransition?: boolean;
 };
 export type IHexagonChildrensProps = {
-    topChildren?: HTMLElement | Element;
-    bottomChildren?: HTMLElement | Element;
-    side1Children?: HTMLElement | Element;
-    side2Children?: HTMLElement | Element;
-    side3Children?: HTMLElement | Element;
-    side4Children?: HTMLElement | Element;
-    side5Children?: HTMLElement | Element;
-    side6Children?: HTMLElement | Element;
+    topChildren?: any;
+    bottomChildren?: any;
+    side1Children?: any;
+    side2Children?: any;
+    side3Children?: any;
+    side4Children?: any;
+    side5Children?: any;
+    side6Children?: any;
 };
 declare const hexagon3D: ({ width, height, rotateZ, rotateX, showShadow, shadowColor, growTop, topBottomColor, sidesColor, opacity, showTransition, }: IHexagonProps) => {
     container: {
