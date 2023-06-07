@@ -20,7 +20,7 @@ var hexagon3D = function (_a) {
     var _b = _a.width, width = _b === void 0 ? 70 : _b, _c = _a.height, height = _c === void 0 ? 50 : _c, _d = _a.rotateZ, rotateZ = _d === void 0 ? 30 : _d, _e = _a.rotateX, rotateX = _e === void 0 ? 50 : _e, _f = _a.showShadow, showShadow = _f === void 0 ? false : _f, _g = _a.shadowColor, shadowColor = _g === void 0 ? shadowColorInit : _g, _h = _a.growTop, growTop = _h === void 0 ? false : _h, _j = _a.topBottomColor, topBottomColor = _j === void 0 ? topBottomColorInit : _j, _k = _a.sidesColor, sidesColor = _k === void 0 ? sidesColorInit : _k, _l = _a.opacity, opacity = _l === void 0 ? 0.8 : _l, _m = _a.showTransition, showTransition = _m === void 0 ? false : _m;
     var height2D = width * 1.1547;
     var sideLength = height2D / 2;
-    var smallHeight = Math.sqrt(Math.pow(height2D, 2) - Math.pow(sideLength, 2));
+    var smallHeight = width;
     var hexagonStyleCommon = {
         display: 'flex',
         justifyContent: 'center',
