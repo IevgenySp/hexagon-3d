@@ -45,7 +45,7 @@ const hexagon3D = ({
 }: IHexagonProps) => {
     const height2D = width * 1.1547;
     const sideLength = height2D / 2;
-    const smallHeight = Math.sqrt(height2D**2 - sideLength**2);
+    const smallHeight = width;
 
     const hexagonStyleCommon = {
         display: 'flex',
