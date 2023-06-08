@@ -1,6 +1,6 @@
 {
   "name": "hexagon-3d",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A service for building CSS hexagons with high interactivity capabilities",
   "main": "dist/hexagon.service.js",
   "types": "dist/hexagon.service.d.ts",
